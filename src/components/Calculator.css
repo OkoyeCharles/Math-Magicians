@@ -1,13 +1,14 @@
 .calculator__container {
+  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.125em;
-  width: max-content;
+  width: clamp(200px, 80%, 500px); /* stylelint-disable-line */
   background: #d3d3d3;
 }
 
 .calculator__container * {
-  font-size: 1.25em;
+  font-size: clamp(1em, 5vw, 2em); /* stylelint-disable-line */
 }
 
 .calculator__field {
@@ -25,19 +26,24 @@ input::-webkit-inner-spin-button {
 }
 
 .calculator__field > input {
+  padding: 0;
   border: none;
-  font-size: 2.5em;
+  font-size: 1.5em;
   width: 100%;
+  aspect-ratio: 3; /* stylelint-disable-line */
   text-align: right;
-  padding: 0.5em 0;
   outline: none;
   background: #858693;
+  color: white;
 }
 
 .calculator__container > button {
-  padding: 2em 3em;
   background: #e0e0e0;
   border: none;
+}
+
+.calculator__container > button:not(.calc__zero) {
+  aspect-ratio: 1; /* stylelint-disable-line */
 }
 
 .calculator__container > button:active {
