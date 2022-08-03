@@ -8,7 +8,7 @@
 }
 
 .calculator__container * {
-  font-size: clamp(1em, 5vw, 2em); /* stylelint-disable-line */
+  font-size: clamp(1em, 5vw, 1.2em); /* stylelint-disable-line */
 }
 
 .calculator__field {
@@ -30,11 +30,19 @@ input::-webkit-inner-spin-button {
   border: none;
   font-size: 1.5em;
   width: 100%;
-  aspect-ratio: 3; /* stylelint-disable-line */
+  aspect-ratio: 4; /* stylelint-disable-line */
   text-align: right;
   outline: none;
   background: #858693;
   color: white;
+}
+
+.calculator__field > input:last-child {
+  font-size: 1em;
+  aspect-ratio: 10;
+  width: calc(100% - 1em);
+  padding-right: 1em;
+  padding-bottom: .5em;
 }
 
 .calculator__container > button {
