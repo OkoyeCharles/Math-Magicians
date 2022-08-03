@@ -39,10 +39,10 @@ input::-webkit-inner-spin-button {
 
 .calculator__field > input:last-child {
   font-size: 1em;
-  aspect-ratio: 10;
+  aspect-ratio: 10; /* stylelint-disable-line */
   width: calc(100% - 1em);
   padding-right: 1em;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .calculator__container > button {
