@@ -1,37 +1,48 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 import './Calculator.css';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
 
   render() {
+    const { total, next } = this.state;
+    const handleClick = (e) => {
+      const newState = calculate(this.state, e.target.innerText);
+      this.setState(newState);
+    };
     return (
       <div className="calculator__container">
         <div className="div calculator__field">
-          <input type="number" />
+          <input type="number" defaultValue={next} />
+          <input type="number" defaultValue={total} />
         </div>
-        <button type="button" className="calc__AC">AC</button>
-        <button type="button" className="calc__plusMinus">+/-</button>
-        <button type="button" className="calc__percent">%</button>
-        <button type="button" className="calc__plus">÷</button>
-        <button type="button" className="calc__seven">7</button>
-        <button type="button" className="calc__eight">8</button>
-        <button type="button" className="calc__nine">9</button>
-        <button type="button" className="calc__mult">x</button>
-        <button type="button" className="calc__four">4</button>
-        <button type="button" className="calc__five">5</button>
-        <button type="button" className="calc__six">6</button>
-        <button type="button" className="calc__minus">-</button>
-        <button type="button" className="calc__one">1</button>
-        <button type="button" className="calc__two">2</button>
-        <button type="button" className="calc__three">3</button>
-        <button type="button" className="calc__plus">+</button>
-        <button type="button" className="calc__zero">0</button>
-        <button type="button" className="calc__period">.</button>
-        <button type="button" className="calc__equal">=</button>
+        <button type="button" className="calc__AC" onClick={handleClick}>AC</button>
+        <button type="button" className="calc__plusMinus" onClick={handleClick}>+/-</button>
+        <button type="button" className="calc__percent" onClick={handleClick}>%</button>
+        <button type="button" className="calc__divide" onClick={handleClick}>÷</button>
+        <button type="button" className="calc__seven" onClick={handleClick}>7</button>
+        <button type="button" className="calc__eight" onClick={handleClick}>8</button>
+        <button type="button" className="calc__nine" onClick={handleClick}>9</button>
+        <button type="button" className="calc__mult" onClick={handleClick}>x</button>
+        <button type="button" className="calc__four" onClick={handleClick}>4</button>
+        <button type="button" className="calc__five" onClick={handleClick}>5</button>
+        <button type="button" className="calc__six" onClick={handleClick}>6</button>
+        <button type="button" className="calc__minus" onClick={handleClick}>-</button>
+        <button type="button" className="calc__one" onClick={handleClick}>1</button>
+        <button type="button" className="calc__two" onClick={handleClick}>2</button>
+        <button type="button" className="calc__three" onClick={handleClick}>3</button>
+        <button type="button" className="calc__plus" onClick={handleClick}>+</button>
+        <button type="button" className="calc__zero" onClick={handleClick}>0</button>
+        <button type="button" className="calc__period" onClick={handleClick}>.</button>
+        <button type="button" className="calc__equal" onClick={handleClick}>=</button>
       </div>
     );
   }
