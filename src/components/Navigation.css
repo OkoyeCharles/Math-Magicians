@@ -1,0 +1,22 @@
+.nav__logo {
+  font-size: clamp(1em, 5vw, 1.5em); /* stylelint-disable-line */
+}
+
+.nav__links {
+  display: flex;
+  gap: 0.5em;
+  margin-left: auto;
+}
+
+.nav__links > * {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav__links > *:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(0.375em);
+}
