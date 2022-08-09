@@ -17,8 +17,8 @@
   content: '';
   width: 100%;
   height: 100%;
-  top: .5em;
-  left: .5em;
+  top: 0.5em;
+  left: 0.5em;
   background: rgba(0, 0, 0, 0.074);
 }
 
@@ -29,6 +29,6 @@
   }
 
   .calculator__page > header {
-    height: fit-content;
+    height: fit-content; /* stylelint-disable-line */
   }
 }
