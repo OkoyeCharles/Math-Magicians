@@ -1,16 +1,34 @@
 .calculator__page {
   display: flex;
   flex-direction: column;
-  padding: 1em 0.8em;
+  padding: 2em 4em;
 }
 
 .calculator__page > header {
-  padding: 1em 0;
+  position: relative;
+  width: fit-content;
   font-size: clamp(1em, 5vw, 1.5em); /* stylelint-disable-line */
+  margin-bottom: 2em;
+}
+
+.calculator__page > header::after {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0.5em;
+  left: 0.5em;
+  background: rgba(0, 0, 0, 0.074);
 }
 
 @media screen and (min-width: 800px) {
   .calculator__page {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .calculator__page > header {
+    height: fit-content; /* stylelint-disable-line */
   }
 }

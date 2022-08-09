@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 * {
-  font-family: 'open sans', sans-serif;
+  font-family: 'lato', sans-serif;
+  color: #222;
+}
+
+*::selection {
+  background: rgba(0, 0, 0, 0.189);
 }

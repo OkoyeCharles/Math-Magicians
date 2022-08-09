@@ -1,13 +1,14 @@
 import React from 'react';
+import './Quotes.css';
 
 function Quotes() {
   return (
     <div className="quotes">
       <blockquote>
         Doing a mathematical calculation in your head, not trustiing your
-        answer, so you ended up using a calculator. Thats all i got!
+        answer, so you ended up using a calculator.
         <br />
-        <cite>Anonymous</cite>
+        <cite>&quot;Anonymous&quot;</cite>
       </blockquote>
     </div>
   );
