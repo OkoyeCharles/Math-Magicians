@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation() {
+  const navStyles = {
+    display: 'flex',
+    padding: '0.5em 0.4em',
+    alignItems: 'center',
+    boxShadow: '0 0 0.5em rgba(0, 0, 0, 0.204)',
+  };
+
   return (
-    <div className="nav__container">
+    <div className="nav__container" style={navStyles}>
       <div className="nav__logo">Math Magicians</div>
       <nav className="nav__links">
         <Link to="/">Home</Link>
