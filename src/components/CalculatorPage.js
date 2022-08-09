@@ -5,7 +5,7 @@ import './CalculatorPage.css';
 function CalculatorPage() {
   return (
     <div className="calculator__page">
-      <header>Let&apos;s do some math</header>
+      <header>Let&apos;s Do Some Math</header>
       <Calculator />
     </div>
   );
