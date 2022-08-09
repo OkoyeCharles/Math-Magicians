@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.125em;
-  width: clamp(200px, 80%, 500px); /* stylelint-disable-line */
+  width: clamp(200px, 80%, 350px); /* stylelint-disable-line */
   background: #d3d3d3;
 }
 

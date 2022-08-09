@@ -1,0 +1,16 @@
+.calculator__page {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.8em;
+}
+
+.calculator__page > header {
+  padding: 1em 0;
+  font-size: clamp(1em, 5vw, 1.5em); /* stylelint-disable-line */
+}
+
+@media screen and (min-width: 800px) {
+  .calculator__page {
+    flex-direction: row;
+  }
+}

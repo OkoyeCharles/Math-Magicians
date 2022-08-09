@@ -1,0 +1,29 @@
+.nav__container {
+  display: flex;
+  padding: 0.5em 0.4em;
+  align-items: center;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.204);
+}
+
+.nav__logo {
+  font-size: clamp(1em, 5vw, 1.5em); /* stylelint-disable-line */
+}
+
+.nav__links {
+  display: flex;
+  gap: 0.5em;
+  margin-left: auto;
+}
+
+.nav__links > * {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav__links > *:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(0.375em);
+}
