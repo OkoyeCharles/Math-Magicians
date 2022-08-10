@@ -1,5 +1,4 @@
 import calculate from './calculate';
-import operate from './operate';
 
 // arrange
 const mockState = {
