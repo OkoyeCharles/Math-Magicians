@@ -10,7 +10,7 @@ blockquote cite {
 @media screen and (min-width: 800px) {
   .quotes {
     padding: 5em;
-    background-image: url(./images/think.svg);
+    background-image: url(../images/think.svg);
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-size: 50vw;
