@@ -1,6 +1,6 @@
 import React from 'react';
 import Calculator from './Calculator';
-import './CalculatorPage.css';
+import '../styles/CalculatorPage.css';
 
 function CalculatorPage() {
   return (

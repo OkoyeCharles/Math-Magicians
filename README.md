@@ -31,7 +31,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A website for all fans of mathematics. It is a Single Page App (SPA) that allows users to Make simple calculations and read random math-related quotes. Here is a [live link](https://charles-calculator-app.netlify.app/quotes) to the app.
+A website for all fans of mathematics. It is a Single Page App (SPA) that allows users to Make simple calculations and read random math-related quotes. Here is a [live link](https://charles-calculator-app.netlify.app/) to the app.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
