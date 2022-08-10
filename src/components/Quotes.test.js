@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from './Home';
+import Quotes from './Quotes';
 
 describe('correctlly renders a component', () => {
-  test('should render Home component', () => {
-    const tree = renderer.create(<Home />).toJSON();
+  test('should render quote component', () => {
+    const tree = renderer.create(<Quotes />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

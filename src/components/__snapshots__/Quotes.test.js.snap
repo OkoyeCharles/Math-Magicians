@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctlly renders a component should render quote component 1`] = `
+<div
+  className="quotes"
+>
+  <blockquote>
+    Doing a mathematical calculation in your head, not trustiing your answer, so you ended up using a calculator.
+    <br />
+    <cite>
+      "Anonymous"
+    </cite>
+  </blockquote>
+</div>
+`;
